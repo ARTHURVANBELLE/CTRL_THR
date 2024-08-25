@@ -1,4 +1,5 @@
-﻿namespace CTRL_THR
+﻿
+namespace CTRL_THR
 {
     public partial class MainPage : ContentPage
     {
@@ -20,6 +21,12 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+
+        private async void OnFOClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FO());
+        }
+
     }
 
 }
