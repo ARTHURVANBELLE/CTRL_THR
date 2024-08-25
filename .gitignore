@@ -1,0 +1,7 @@
+*.vsidx
+.vs/
+CTRL_THR/obj/
+CTRL_THR/bin/
+*.suo
+
+.fake
