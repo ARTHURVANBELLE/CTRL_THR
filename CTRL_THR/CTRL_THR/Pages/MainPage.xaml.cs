@@ -12,7 +12,7 @@ namespace CTRL_THR
 
         private async void OnFOClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new FoPage());
+            await Navigation.PushAsync(new FoPage(true));
         }
 
     }

@@ -17,7 +17,7 @@
         </Grid.RowDefinitions>
 
         <!--  Chart  -->
-        <chart:SfCartesianChart Grid.Row="0" BindingContext="{Binding Source={local:StepResponseViewModel}}">
+        <chart:SfCartesianChart Grid.Row="0">
             <!--  Axe des X pour le temps  -->
             <chart:SfCartesianChart.XAxes>
                 <chart:CategoryAxis>
@@ -29,16 +29,27 @@
 
             <!--  Axe des Y pour la réponse  -->
             <chart:SfCartesianChart.YAxes>
-                <chart:NumericalAxis>
+                <chart:NumericalAxis
+                    Name="numericalAxisY"
+                    Maximum="{Binding Maximum}"
+                    Minimum="{Binding Minimum}">
                     <chart:NumericalAxis.Title>
-                        <chart:ChartAxisTitle Text="%" />
+                        <chart:ChartAxisTitle Text="(%)" />
                     </chart:NumericalAxis.Title>
                 </chart:NumericalAxis>
             </chart:SfCartesianChart.YAxes>
 
+
             <!--  Série de lignes pour afficher la réponse à l'échelon  -->
             <chart:LineSeries
-                ItemsSource="{Binding Data}"
+                ItemsSource="{Binding DataStep}"
+                Label="Step Response"
+                ShowMarkers="False"
+                XBindingPath="Time"
+                YBindingPath="Response" />
+
+            <chart:LineSeries
+                ItemsSource="{Binding DataMV}"
                 Label="Step Response"
                 ShowMarkers="False"
                 XBindingPath="Time"
@@ -117,7 +128,15 @@
                     Grid.Row="1"
                     Grid.Column="7"
                     Keyboard="Numeric"
-                    Text="{Binding Tlead, Mode=TwoWay}" />
+                    Text="{Binding Theta, Mode=TwoWay}" />
+
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="8"
+                    Command="{Binding NavigateToFoPageCommand}"
+                    HorizontalOptions="CenterAndExpand"
+                    Text="ERASE"
+                    VerticalOptions="Center" />
 
             </Grid>
         </StackLayout>
