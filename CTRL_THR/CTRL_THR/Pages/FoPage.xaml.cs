@@ -7,5 +7,10 @@ namespace CTRL_THR
             InitializeComponent();
             BindingContext = new StepResponseViewModel(parameters, this.Navigation);
         }
+
+        private void CategoryAxis_LabelCreated(object sender, Syncfusion.Maui.Charts.ChartAxisLabelEventArgs e)
+        {
+
+        }
     }
 }

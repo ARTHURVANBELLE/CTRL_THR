@@ -5,26 +5,77 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
     xmlns:local="clr-namespace:CTRL_THR"
-    Title="Plots">
+    Title="{Binding ProcessName}">
 
     <Grid Padding="10">
         <!--  Define the rows and columns for the layout  -->
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <!--  Info row  -->
             <RowDefinition Height="*" />
             <!--  Chart row  -->
             <RowDefinition Height="Auto" />
             <!--  Input row  -->
         </Grid.RowDefinitions>
 
+        <StackLayout
+            Grid.Row="0"
+            Orientation="Vertical"
+            Spacing="10">
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5*" />
+                </Grid.ColumnDefinitions>
+
+
+
+                <!--  Label and input for Tmax  -->
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalOptions="End"
+                    Text="Points Generated:"
+                    VerticalOptions="Center" />
+                <Entry
+                    x:Name="TmaxEntry"
+                    Grid.Column="2"
+                    Keyboard="Numeric"
+                    Text="{Binding Points, Mode=TwoWay}" />
+
+                <!--  Label and input for T interval  -->
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="3"
+                    HorizontalOptions="End"
+                    Text="Max Time:"
+                    VerticalOptions="Center" />
+                <Entry
+                    x:Name="IntervalEntry"
+                    Grid.Column="4"
+                    Keyboard="Numeric"
+                    Text="{Binding TimeInterval, Mode=TwoWay}" />
+
+            </Grid>
+        </StackLayout>
+
+
         <!--  Chart  -->
-        <chart:SfCartesianChart Grid.Row="0">
+        <chart:SfCartesianChart Grid.Row="1">
             <!--  Axe des X pour le temps  -->
             <chart:SfCartesianChart.XAxes>
-                <chart:CategoryAxis>
-                    <chart:CategoryAxis.Title>
-                        <chart:ChartAxisTitle Text="time (s)" />
-                    </chart:CategoryAxis.Title>
-                </chart:CategoryAxis>
+                <chart:NumericalAxis Interval="5">
+                    <chart:NumericalAxis.Title>
+                        <chart:ChartAxisTitle Text="Time (s)" />
+                    </chart:NumericalAxis.Title>
+                    <chart:NumericalAxis.MajorGridLineStyle>
+                        <chart:ChartLineStyle Stroke="Beige" StrokeWidth="1" />
+                    </chart:NumericalAxis.MajorGridLineStyle>
+                </chart:NumericalAxis>
             </chart:SfCartesianChart.XAxes>
 
             <!--  Axe des Y pour la réponse  -->
@@ -36,6 +87,9 @@
                     <chart:NumericalAxis.Title>
                         <chart:ChartAxisTitle Text="(%)" />
                     </chart:NumericalAxis.Title>
+                    <chart:NumericalAxis.MajorGridLineStyle>
+                        <chart:ChartLineStyle Stroke="Beige" StrokeWidth="1" />
+                    </chart:NumericalAxis.MajorGridLineStyle>
                 </chart:NumericalAxis>
             </chart:SfCartesianChart.YAxes>
 
@@ -48,7 +102,7 @@
                 XBindingPath="Time"
                 YBindingPath="Response" />
 
-            <chart:LineSeries
+            <chart:SplineSeries
                 ItemsSource="{Binding DataMV}"
                 Label="Step Response"
                 ShowMarkers="False"
@@ -58,22 +112,22 @@
 
         <!--  Inputs and labels  -->
         <StackLayout
-            Grid.Row="1"
+            Grid.Row="2"
             Orientation="Vertical"
             Spacing="10">
             <Grid ColumnSpacing="10">
                 <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
                     <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
                     <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
                     <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
                     <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
                     <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
@@ -149,8 +203,8 @@
                     Grid.Row="1"
                     Grid.Column="10"
                     Command="{Binding NavigateToStepPageCommand}"
-                    HorizontalOptions="CenterAndExpand"
-                    Text="ERASE"
+                    HorizontalOptions="EndAndExpand"
+                    Text="DRAW"
                     VerticalOptions="Center" />
 
             </Grid>
