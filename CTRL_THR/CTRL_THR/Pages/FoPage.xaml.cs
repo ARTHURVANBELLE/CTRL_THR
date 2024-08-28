@@ -1,11 +1,11 @@
 namespace CTRL_THR
 {
-    public partial class FoPage : ContentPage
+    public partial class StepPage : ContentPage
     {
-        public FoPage(bool scenario)
+        public StepPage(Dictionary<string, double> parameters)
         {
             InitializeComponent();
-            BindingContext = new StepResponseViewModel(scenario, this.Navigation);
+            BindingContext = new StepResponseViewModel(parameters, this.Navigation);
         }
     }
 }

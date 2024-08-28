@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="CTRL_THR.FoPage"
+    x:Class="CTRL_THR.StepPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
@@ -73,6 +73,8 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
                 <!--  Label and input for Kp  -->
@@ -88,52 +90,65 @@
                     Keyboard="Numeric"
                     Text="{Binding Kp, Mode=TwoWay}" />
 
-                <!--  Label and input for T  -->
+                <!--  Label and input for Tlag1  -->
                 <Label
                     Grid.Row="1"
                     Grid.Column="2"
                     HorizontalOptions="End"
-                    Text="T lag:"
+                    Text="T lag1:"
                     VerticalOptions="Center" />
                 <Entry
                     x:Name="TlagEntry"
                     Grid.Row="1"
                     Grid.Column="3"
                     Keyboard="Numeric"
-                    Text="{Binding Tlag, Mode=TwoWay}" />
+                    Text="{Binding Tlag1, Mode=TwoWay}" />
+                <!--  Label and input for Tlag2  -->
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="4"
+                    HorizontalOptions="End"
+                    Text="T lag2:"
+                    VerticalOptions="Center" />
+                <Entry
+                    x:Name="Tlag2Entry"
+                    Grid.Row="1"
+                    Grid.Column="5"
+                    Keyboard="Numeric"
+                    Text="{Binding Tlag2, Mode=TwoWay}" />
 
                 <!--  Label and input for T lead  -->
                 <Label
                     Grid.Row="1"
-                    Grid.Column="4"
+                    Grid.Column="6"
                     HorizontalOptions="End"
                     Text="T lead:"
                     VerticalOptions="Center" />
                 <Entry
                     x:Name="TleadEntry"
                     Grid.Row="1"
-                    Grid.Column="5"
+                    Grid.Column="7"
                     Keyboard="Numeric"
                     Text="{Binding Tlead, Mode=TwoWay}" />
 
                 <!--  Label and input for Theta lead  -->
                 <Label
                     Grid.Row="1"
-                    Grid.Column="6"
+                    Grid.Column="8"
                     HorizontalOptions="End"
                     Text="Theta:"
                     VerticalOptions="Center" />
                 <Entry
                     x:Name="ThetaEntry"
                     Grid.Row="1"
-                    Grid.Column="7"
+                    Grid.Column="9"
                     Keyboard="Numeric"
                     Text="{Binding Theta, Mode=TwoWay}" />
 
                 <Button
                     Grid.Row="1"
-                    Grid.Column="8"
-                    Command="{Binding NavigateToFoPageCommand}"
+                    Grid.Column="10"
+                    Command="{Binding NavigateToStepPageCommand}"
                     HorizontalOptions="CenterAndExpand"
                     Text="ERASE"
                     VerticalOptions="Center" />

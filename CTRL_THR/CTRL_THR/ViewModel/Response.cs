@@ -14,6 +14,10 @@ namespace CTRL_THR
 
         public ICommand ClearGraphCommand { get; }
 
+        private Dictionary<string, double> parameters = new Dictionary<string, double> { { "Tlead", 0.0 },
+            {"Tlag1", 0.0 },{"Tlag2", 0.0 }, {"Kp", 0.0 }, {"Theta", 0.0 }, {"Points", 100 } };
+         
+
         private ObservableCollection<ResponseData> _dataMV;
         public ObservableCollection<ResponseData> DataMV
         {
@@ -71,56 +75,196 @@ namespace CTRL_THR
             }
         }
 
-        public ICommand NavigateToFoPageCommand { get; }
+        private string _kp;
+        public string Kp
+        {
+            get => _kp;
+            set
+            {
+                _kp = value;
+                OnPropertyChanged(nameof(Kp));
+            }
+        }
+
+        private string _tlag1;
+        public string Tlag1
+        {
+            get => _tlag1;
+            set
+            {
+                _tlag1 = value;
+                OnPropertyChanged(nameof(Tlag1));
+            }
+        }
+
+        private string _tlag2;
+        public string Tlag2
+        {
+            get => _tlag2;
+            set
+            {
+                _tlag2 = value;
+                OnPropertyChanged(nameof(Tlag2));
+            }
+        }
+
+        private string _tlead;
+        public string Tlead
+        {
+            get => _tlead;
+            set
+            {
+                _tlead = value;
+                OnPropertyChanged(nameof(Tlead));
+            }
+        }
+
+        private string _theta;
+        public string Theta
+        {
+            get => _theta;
+            set
+            {
+                _theta = value;
+                OnPropertyChanged(nameof(Theta));
+            }
+        }
+
+        private string _points;
+        public string Points
+        {
+            get => _points;
+            set
+            {
+                _points = value;
+                OnPropertyChanged(nameof(Points));
+            }
+        }
+
+        public ICommand NavigateToStepPageCommand { get; }
 
         private readonly INavigation _navigation;
 
-        private async void NavigateToFoPage()
-        {
-            // Créez une nouvelle instance de la page FoPage
-            var foPage = new FoPage(false);
-
-            // Naviguez vers cette page
-            await _navigation.PushAsync(foPage);
-        }
-
-        public StepResponseViewModel(bool scenario, INavigation navigation)
+        public StepResponseViewModel(Dictionary<string, double> parameters, INavigation navigation)
         {
             _navigation = navigation;
-            NavigateToFoPageCommand = new Command(NavigateToFoPage);
+            NavigateToStepPageCommand = new Command(NavigateToStepPage);
 
             DataStep = new ObservableCollection<ResponseData>();
             DataMV = new ObservableCollection<ResponseData>();
 
-            if (scenario)
-            {
-                GenerateStepResponse(1.0, 5.0, 100);
-                GenerateMV(1.0, 100);
-                AdjustYAxisLimits(1);
-            }
-            else
-            {
-                Debug.WriteLine("HELLLLLLLLLLLLLO");
-                GenerateStepResponse(1.1, 20.0, 60);
-            }
-        }
+            this.parameters = parameters;
 
-        private void GenerateStepResponse(double Kp, double T, int numberOfPoints)
+            GenerateStepResponse();
+            GenerateMV(1, parameters["Points"]);
+            AdjustYAxisLimits(1);
+        }
+        private async void NavigateToStepPage()
         {
-            for (int i = 0; i < numberOfPoints; i++)
+            GetEntryValues();
+
+            // Créez une nouvelle instance de la page FoPage
+            var stepPage = new StepPage(parameters);
+
+            // Naviguez vers cette page
+            await _navigation.PushAsync(stepPage);
+        }
+        private void GenerateStepResponse()
+        {
+            double Tlag1 = parameters["Tlag1"];
+            double Tlag2 = parameters["Tlag2"];
+            double Tlead = parameters["Tlead"];
+            double Theta = parameters["Theta"];
+            double Kp = parameters["Kp"];
+            double numberPoints = parameters["Points"];
+
+            foreach(var item in parameters.Keys)
             {
-                double t = i; // Temps
-                double y = Kp * (1 - Math.Exp(-t / T)); // Réponse à l'échelon
+                Debug.WriteLine("--" + item.ToString() + " : " + parameters[item].ToString());
+            }
+
+            for (int i = 0; i < numberPoints; i++)
+            {
+                double t = i; //time
+                double y = 0; //response
+                if (Tlag1 != 0 && Tlag2 != 0 && Tlead != 0)
+                {
+                    y = GenerateStepLLANDFO(t, Tlag1, Tlag2, Tlead, Kp);
+                }
+                else if (Tlag1 != 0 && Tlag2 != 0)
+                {
+                    y = GenerateStepSO(t, Tlag1, Tlag2, Kp);
+                }
+                else if (Tlag1 != 0 && Tlead != 0)
+                {
+                    y = GenerateStepLeadLag(t, Tlag1, Tlead, Kp);
+                }
+                else if (Tlag1 != 0)
+                {
+                    y = GenerateStepFO(t, Tlag1, Kp);
+                }
+
                 DataStep.Add(new ResponseData { Time = t, Response = y });
             }
         }
 
-        private void GenerateMV(double Kp, int numberOfPoints)
+        private void GetEntryValues()
+        {
+            double tlead = 0;
+            double tlag1 = 0;
+            double tlag2 = 0;
+            double kp = 0;
+            double theta = 0;
+            double points = 100;
+
+            double.TryParse(_tlead?.ToString(), out tlead);
+            double.TryParse(_tlag1?.ToString(), out tlag1);
+            double.TryParse(_tlag2?.ToString(), out tlag2);
+            double.TryParse(_kp?.ToString(), out kp);
+            double.TryParse(_theta?.ToString(), out theta);
+            //double.TryParse(_points?.ToString() &&, out points);
+
+            parameters["Tlead"] = tlead;
+            parameters["Tlag1"] = tlag1;
+            parameters["Tlag2"] = tlag2;
+            parameters["Kp"] = kp;
+            parameters["Theta"] = theta;
+            parameters["Points"] = points;
+        }
+        private double GenerateStepFO(double time, double Tlag, double Kp)
+        {
+            double y = Kp * (1 - Math.Exp(-time / Tlag)); // Fo
+            Debug.WriteLine("---First Order---");
+            return y;
+        }
+
+        private double GenerateStepLeadLag(double time, double Tlag, double Tlead, double Kp)
+        {
+            double y = Kp * (1 - Math.Exp(-time / Tlag)) * ((Tlag - Tlead) / Tlag) + Kp * (Tlead/Tlag);
+            Debug.WriteLine("---LeadLag---");
+            return y;
+        }
+
+        private double GenerateStepSO(double time, double Tlag1, double Tlag2, double Kp)
+        {
+            double y = Kp * (1 + (Tlag1 / (Tlag2 - Tlag1)) * Math.Exp(-time / Tlag1) - (Tlag2 / (Tlag2 - Tlag1)) * Math.Exp(-time / Tlag2));
+            Debug.WriteLine("---Second Order---");
+            return y;
+        }
+
+        private double GenerateStepLLANDFO(double time, double Tlag1, double Tlag2, double Tlead, double Kp)
+        {
+            double y = Kp * (1 + ((Tlag1 - Tlead) / (Tlag2 - Tlag1)) * Math.Exp(-time / Tlag1) - ((Tlag2 - Tlead) / (Tlag2 - Tlag1)) * Math.Exp(-time / Tlag2));
+            Debug.WriteLine("---LeadLag AND First Order---");
+            return y;
+        }
+
+        private void GenerateMV(double Kc, double numberOfPoints)
         {
             for (int i = 0; i < numberOfPoints; i++)
             {
                 double t = i; // Temps
-                double y = Kp; // échelon
+                double y = Kc; // échelon
                 DataMV.Add(new ResponseData { Time = t, Response = y });
             }
         }
