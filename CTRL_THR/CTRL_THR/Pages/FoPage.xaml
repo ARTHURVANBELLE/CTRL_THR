@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="CTRL_THR.StepPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+    xmlns:local="clr-namespace:CTRL_THR"
+    Title="{Binding ProcessName}">
+
+    <Grid Padding="10">
+        <!--  Define the rows and columns for the layout  -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <!--  Info row  -->
+            <RowDefinition Height="*" />
+            <!--  Chart row  -->
+            <RowDefinition Height="Auto" />
+            <!--  Input row  -->
+        </Grid.RowDefinitions>
+
+        <StackLayout
+            Grid.Row="0"
+            Orientation="Vertical"
+            Spacing="10">
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="5*" />
+                </Grid.ColumnDefinitions>
+
+
+
+                <!--  Label and input for Tmax  -->
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalOptions="End"
+                    Text="Points Generated:"
+                    VerticalOptions="Center" />
+                <Entry
+                    x:Name="TmaxEntry"
+                    Grid.Column="2"
+                    Keyboard="Numeric"
+                    Text="{Binding Points, Mode=TwoWay}" />
+
+                <!--  Label and input for T interval  -->
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="3"
+                    HorizontalOptions="End"
+                    Text="Max Time:"
+                    VerticalOptions="Center" />
+                <Entry
+                    x:Name="IntervalEntry"
+                    Grid.Column="4"
+                    Keyboard="Numeric"
+                    Text="{Binding TimeInterval, Mode=TwoWay}" />
+
+            </Grid>
+        </StackLayout>
+
+
+        <!--  Chart  -->
+        <chart:SfCartesianChart Grid.Row="1">
+            <!--  Axe des X pour le temps  -->
+            <chart:SfCartesianChart.XAxes>
+                <chart:NumericalAxis Interval="5">
+                    <chart:NumericalAxis.Title>
+                        <chart:ChartAxisTitle Text="Time (s)" />
+                    </chart:NumericalAxis.Title>
+                    <chart:NumericalAxis.MajorGridLineStyle>
+                        <chart:ChartLineStyle Stroke="Beige" StrokeWidth="1" />
+                    </chart:NumericalAxis.MajorGridLineStyle>
+                </chart:NumericalAxis>
+            </chart:SfCartesianChart.XAxes>
+
+            <!--  Axe des Y pour la réponse  -->
+            <chart:SfCartesianChart.YAxes>
+                <chart:NumericalAxis
+                    Name="numericalAxisY"
+                    Maximum="{Binding Maximum}"
+                    Minimum="{Binding Minimum}">
+                    <chart:NumericalAxis.Title>
+                        <chart:ChartAxisTitle Text="(%)" />
+                    </chart:NumericalAxis.Title>
+                    <chart:NumericalAxis.MajorGridLineStyle>
+                        <chart:ChartLineStyle Stroke="Beige" StrokeWidth="1" />
+                    </chart:NumericalAxis.MajorGridLineStyle>
+                </chart:NumericalAxis>
+            </chart:SfCartesianChart.YAxes>
+
+
+            <!--  Série de lignes pour afficher la réponse à l'échelon  -->
+            <chart:LineSeries
+                ItemsSource="{Binding DataStep}"
+                Label="Step Response"
+                ShowMarkers="False"
+                XBindingPath="Time"
+                YBindingPath="Response" />
+
+            <chart:SplineSeries
+                ItemsSource="{Binding DataMV}"
+                Label="Step Response"
+                ShowMarkers="False"
+                XBindingPath="Time"
+                YBindingPath="Response" />
+        </chart:SfCartesianChart>
+
+        <!--  Inputs and labels  -->
+        <StackLayout
+            Grid.Row="2"
+            Orientation="Vertical"
+            Spacing="10">
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!--  Label and input for Kp  -->
+                <Label
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    HorizontalOptions="End"
+                    Text="Kp:"
+                    VerticalOptions="Center" />
+                <Entry
+                    x:Name="KpEntry"
+                    Grid.Column="1"
+                    Keyboard="Numeric"
+                    Text="{Binding Kp, Mode=TwoWay}" />
+
+                <!--  Label and input for Tlag1  -->
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    HorizontalOptions="End"
+                    Text="T lag1:"
+                    VerticalOptions="Center" />
+                <Entry
+                    x:Name="TlagEntry"
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    Keyboard="Numeric"
+                    Text="{Binding Tlag1, Mode=TwoWay}" />
+                <!--  Label and input for Tlag2  -->
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="4"
+                    HorizontalOptions="End"
+                    Text="T lag2:"
+                    VerticalOptions="Center" />
+                <Entry
+                    x:Name="Tlag2Entry"
+                    Grid.Row="1"
+                    Grid.Column="5"
+                    Keyboard="Numeric"
+                    Text="{Binding Tlag2, Mode=TwoWay}" />
+
+                <!--  Label and input for T lead  -->
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="6"
+                    HorizontalOptions="End"
+                    Text="T lead:"
+                    VerticalOptions="Center" />
+                <Entry
+                    x:Name="TleadEntry"
+                    Grid.Row="1"
+                    Grid.Column="7"
+                    Keyboard="Numeric"
+                    Text="{Binding Tlead, Mode=TwoWay}" />
+
+                <!--  Label and input for Theta lead  -->
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="8"
+                    HorizontalOptions="End"
+                    Text="Theta:"
+                    VerticalOptions="Center" />
+                <Entry
+                    x:Name="ThetaEntry"
+                    Grid.Row="1"
+                    Grid.Column="9"
+                    Keyboard="Numeric"
+                    Text="{Binding Theta, Mode=TwoWay}" />
+
+                <Button
+                    Grid.Row="1"
+                    Grid.Column="10"
+                    Command="{Binding NavigateToStepPageCommand}"
+                    HorizontalOptions="EndAndExpand"
+                    Text="DRAW"
+                    VerticalOptions="Center" />
+
+            </Grid>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

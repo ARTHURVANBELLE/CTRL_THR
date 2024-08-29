@@ -5,3 +5,8 @@ CTRL_THR/bin/
 *.suo
 
 .fake
+
+# Ignorer les fichiers dll, pdb et exe
+*.dll
+*.pdb
+*.exe
