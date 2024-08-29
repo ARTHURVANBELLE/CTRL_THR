@@ -73,7 +73,7 @@
                         <chart:ChartAxisTitle Text="Time (s)" />
                     </chart:NumericalAxis.Title>
                     <chart:NumericalAxis.MajorGridLineStyle>
-                        <chart:ChartLineStyle Stroke="Beige" StrokeWidth="1" />
+                        <chart:ChartLineStyle Stroke="LightGray" StrokeWidth="1" />
                     </chart:NumericalAxis.MajorGridLineStyle>
                 </chart:NumericalAxis>
             </chart:SfCartesianChart.XAxes>
@@ -88,7 +88,7 @@
                         <chart:ChartAxisTitle Text="(%)" />
                     </chart:NumericalAxis.Title>
                     <chart:NumericalAxis.MajorGridLineStyle>
-                        <chart:ChartLineStyle Stroke="Beige" StrokeWidth="1" />
+                        <chart:ChartLineStyle Stroke="LightGray" StrokeWidth="1" />
                     </chart:NumericalAxis.MajorGridLineStyle>
                 </chart:NumericalAxis>
             </chart:SfCartesianChart.YAxes>
@@ -96,13 +96,16 @@
 
             <!--  Série de lignes pour afficher la réponse à l'échelon  -->
             <chart:LineSeries
+                Fill="BlueViolet"
                 ItemsSource="{Binding DataStep}"
                 Label="Step Response"
                 ShowMarkers="False"
                 XBindingPath="Time"
                 YBindingPath="Response" />
 
+
             <chart:SplineSeries
+                Fill="OrangeRed"
                 ItemsSource="{Binding DataMV}"
                 Label="Step Response"
                 ShowMarkers="False"
@@ -209,6 +212,8 @@
 
             </Grid>
         </StackLayout>
+
+
     </Grid>
 
 </ContentPage>

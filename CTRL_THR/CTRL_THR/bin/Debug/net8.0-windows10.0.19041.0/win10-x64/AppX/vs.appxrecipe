@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-29T21:57:36.973</Modified>
+      <Modified>2024-08-29T23:18:08.292</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-08-29T21:57:36.908</Modified>
+      <Modified>2024-08-29T22:43:39.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CTRL_THR.runtimeconfig.json">
       <PackagePath>CTRL_THR.runtimeconfig.json</PackagePath>
-      <Modified>2024-08-29T21:57:36.873</Modified>
+      <Modified>2024-08-29T22:43:38.847</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CTRL_THR.dll">
       <PackagePath>CTRL_THR.dll</PackagePath>
-      <Modified>2024-08-29T21:57:36.655</Modified>
+      <Modified>2024-08-29T23:18:08.087</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>CTRL_THR.exe</PackagePath>
-      <Modified>2024-08-29T21:57:36.658</Modified>
+      <Modified>2024-08-29T23:18:08.090</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -55,23 +55,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2024-08-29T21:57:35.603</Modified>
+      <Modified>2024-08-29T22:43:36.891</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2024-08-29T21:57:35.612</Modified>
+      <Modified>2024-08-29T22:43:36.901</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2024-08-29T21:57:35.636</Modified>
+      <Modified>2024-08-29T22:43:36.914</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2024-08-29T21:57:35.654</Modified>
+      <Modified>2024-08-29T22:43:36.933</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2024-08-29T21:57:35.722</Modified>
+      <Modified>2024-08-29T22:43:37.005</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -81,217 +81,217 @@
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
       <Modified>2024-08-25T17:12:11.352</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dbr.scale-100.png">
-      <PackagePath>dbr.scale-100.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.549</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
-      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.550</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
-      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.550</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
-      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.550</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
-      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.550</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
-      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.550</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLargeTile.scale-400.png">
-      <PackagePath>ctappiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.550</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLargeTile.scale-200.png">
-      <PackagePath>ctappiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.550</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLargeTile.scale-150.png">
-      <PackagePath>ctappiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.550</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLargeTile.scale-125.png">
-      <PackagePath>ctappiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.550</Modified>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappicon.ico">
+      <PackagePath>ctappicon.ico</PackagePath>
+      <Modified>2024-08-29T22:43:37.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLargeTile.scale-100.png">
       <PackagePath>ctappiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.550</Modified>
+      <Modified>2024-08-29T22:43:37.894</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconWideTile.scale-400.png">
-      <PackagePath>ctappiconWideTile.scale-400.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.550</Modified>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLargeTile.scale-125.png">
+      <PackagePath>ctappiconLargeTile.scale-125.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.894</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconWideTile.scale-200.png">
-      <PackagePath>ctappiconWideTile.scale-200.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.551</Modified>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLargeTile.scale-150.png">
+      <PackagePath>ctappiconLargeTile.scale-150.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.893</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconWideTile.scale-150.png">
-      <PackagePath>ctappiconWideTile.scale-150.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.551</Modified>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLargeTile.scale-200.png">
+      <PackagePath>ctappiconLargeTile.scale-200.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.893</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconWideTile.scale-125.png">
-      <PackagePath>ctappiconWideTile.scale-125.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.551</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconWideTile.scale-100.png">
-      <PackagePath>ctappiconWideTile.scale-100.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.551</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconMediumTile.scale-400.png">
-      <PackagePath>ctappiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.551</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconMediumTile.scale-200.png">
-      <PackagePath>ctappiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.551</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconMediumTile.scale-150.png">
-      <PackagePath>ctappiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.551</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconMediumTile.scale-125.png">
-      <PackagePath>ctappiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.551</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconMediumTile.scale-100.png">
-      <PackagePath>ctappiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.552</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconSmallTile.scale-400.png">
-      <PackagePath>ctappiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.552</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconSmallTile.scale-200.png">
-      <PackagePath>ctappiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.552</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconSmallTile.scale-150.png">
-      <PackagePath>ctappiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.552</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconSmallTile.scale-125.png">
-      <PackagePath>ctappiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.552</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconSmallTile.scale-100.png">
-      <PackagePath>ctappiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.552</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconStoreLogo.scale-400.png">
-      <PackagePath>ctappiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.552</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconStoreLogo.scale-200.png">
-      <PackagePath>ctappiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.553</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconStoreLogo.scale-150.png">
-      <PackagePath>ctappiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.553</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconStoreLogo.scale-125.png">
-      <PackagePath>ctappiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.553</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconStoreLogo.scale-100.png">
-      <PackagePath>ctappiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.553</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>ctappiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.553</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>ctappiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.553</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>ctappiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.553</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>ctappiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.554</Modified>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLargeTile.scale-400.png">
+      <PackagePath>ctappiconLargeTile.scale-400.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.893</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>ctappiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.554</Modified>
+      <Modified>2024-08-29T22:43:37.897</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>ctappiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.554</Modified>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>ctappiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.896</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>ctappiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.554</Modified>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>ctappiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.896</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>ctappiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.554</Modified>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>ctappiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.896</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>ctappiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.554</Modified>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>ctappiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.896</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>ctappiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.554</Modified>
+      <Modified>2024-08-29T22:43:37.897</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.targetsize-256.png">
-      <PackagePath>ctappiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.554</Modified>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>ctappiconLogo.altform-unplated_targetsize-24.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.897</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.targetsize-48.png">
-      <PackagePath>ctappiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.555</Modified>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>ctappiconLogo.altform-unplated_targetsize-256.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.897</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.targetsize-32.png">
-      <PackagePath>ctappiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.555</Modified>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>ctappiconLogo.altform-unplated_targetsize-32.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.897</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.targetsize-24.png">
-      <PackagePath>ctappiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.555</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.targetsize-16.png">
-      <PackagePath>ctappiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.555</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.scale-400.png">
-      <PackagePath>ctappiconLogo.scale-400.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.555</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.scale-200.png">
-      <PackagePath>ctappiconLogo.scale-200.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.555</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.scale-150.png">
-      <PackagePath>ctappiconLogo.scale-150.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.555</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.scale-125.png">
-      <PackagePath>ctappiconLogo.scale-125.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.555</Modified>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>ctappiconLogo.altform-unplated_targetsize-48.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.897</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.scale-100.png">
       <PackagePath>ctappiconLogo.scale-100.png</PackagePath>
-      <Modified>2024-08-29T21:57:36.555</Modified>
+      <Modified>2024-08-29T22:43:37.898</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappicon.ico">
-      <PackagePath>ctappicon.ico</PackagePath>
-      <Modified>2024-08-29T21:57:36.555</Modified>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.scale-125.png">
+      <PackagePath>ctappiconLogo.scale-125.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.898</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.scale-150.png">
+      <PackagePath>ctappiconLogo.scale-150.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.898</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.scale-200.png">
+      <PackagePath>ctappiconLogo.scale-200.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.898</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.scale-400.png">
+      <PackagePath>ctappiconLogo.scale-400.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.898</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.targetsize-16.png">
+      <PackagePath>ctappiconLogo.targetsize-16.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.898</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.targetsize-24.png">
+      <PackagePath>ctappiconLogo.targetsize-24.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.898</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.targetsize-256.png">
+      <PackagePath>ctappiconLogo.targetsize-256.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.897</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.targetsize-32.png">
+      <PackagePath>ctappiconLogo.targetsize-32.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.897</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconLogo.targetsize-48.png">
+      <PackagePath>ctappiconLogo.targetsize-48.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.897</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconMediumTile.scale-100.png">
+      <PackagePath>ctappiconMediumTile.scale-100.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconMediumTile.scale-125.png">
+      <PackagePath>ctappiconMediumTile.scale-125.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconMediumTile.scale-150.png">
+      <PackagePath>ctappiconMediumTile.scale-150.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconMediumTile.scale-200.png">
+      <PackagePath>ctappiconMediumTile.scale-200.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconMediumTile.scale-400.png">
+      <PackagePath>ctappiconMediumTile.scale-400.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.894</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconSmallTile.scale-100.png">
+      <PackagePath>ctappiconSmallTile.scale-100.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconSmallTile.scale-125.png">
+      <PackagePath>ctappiconSmallTile.scale-125.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconSmallTile.scale-150.png">
+      <PackagePath>ctappiconSmallTile.scale-150.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconSmallTile.scale-200.png">
+      <PackagePath>ctappiconSmallTile.scale-200.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconSmallTile.scale-400.png">
+      <PackagePath>ctappiconSmallTile.scale-400.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconStoreLogo.scale-100.png">
+      <PackagePath>ctappiconStoreLogo.scale-100.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.896</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconStoreLogo.scale-125.png">
+      <PackagePath>ctappiconStoreLogo.scale-125.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.896</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconStoreLogo.scale-150.png">
+      <PackagePath>ctappiconStoreLogo.scale-150.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.896</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconStoreLogo.scale-200.png">
+      <PackagePath>ctappiconStoreLogo.scale-200.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconStoreLogo.scale-400.png">
+      <PackagePath>ctappiconStoreLogo.scale-400.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconWideTile.scale-100.png">
+      <PackagePath>ctappiconWideTile.scale-100.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.894</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconWideTile.scale-125.png">
+      <PackagePath>ctappiconWideTile.scale-125.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.894</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconWideTile.scale-150.png">
+      <PackagePath>ctappiconWideTile.scale-150.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.894</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconWideTile.scale-200.png">
+      <PackagePath>ctappiconWideTile.scale-200.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.894</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ctappiconWideTile.scale-400.png">
+      <PackagePath>ctappiconWideTile.scale-400.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.894</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dbr.scale-100.png">
+      <PackagePath>dbr.scale-100.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.892</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+      <Modified>2024-08-29T22:43:37.892</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\source\repos\CTRL_THR\CTRL_THR\CTRL_THR\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\CTRL_THR.deps.json">
       <PackagePath>CTRL_THR.deps.json</PackagePath>
-      <Modified>2024-08-29T21:57:36.871</Modified>
+      <Modified>2024-08-29T22:43:38.770</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Arthur\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

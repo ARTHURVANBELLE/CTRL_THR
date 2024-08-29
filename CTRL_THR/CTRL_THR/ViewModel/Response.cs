@@ -14,6 +14,7 @@ namespace CTRL_THR
     {
 
         public ICommand ClearGraphCommand { get; }
+        private double BeginStep = 1;
 
         private Dictionary<string, double> parameters = new Dictionary<string, double> { { "Tlead", 0.0 },
             {"Tlag1", 0.0 },{"Tlag2", 0.0 }, {"Kp", 0.0 }, {"Theta", 0.0 }, {"Points", 500 }, {"TimeInterval", 15 }};
@@ -196,6 +197,7 @@ namespace CTRL_THR
         {
             double numberPoints = parameters["Points"];
             double timeInterval = parameters["TimeInterval"];
+            double theta = parameters["Theta"];
             double y = 0; //response
             double t = 0; //time
             double pas = timeInterval / numberPoints;
@@ -208,10 +210,16 @@ namespace CTRL_THR
 
             for (int i = 0; i < numberPoints; i++)
             {
-                t = i * pas; //time
-                y = vectorGenerator(t);
-               
-                DataStep.Add(new ResponseData { Time = t, Response = y });
+                t = i * pas ; //time
+                if (t >= theta)
+                {
+                    y = vectorGenerator(t - theta);
+                }
+                else
+                {
+                    y = 0;
+                }
+                DataStep.Add(new ResponseData { Time = t + BeginStep, Response = y });
             }
         }
 
@@ -220,7 +228,6 @@ namespace CTRL_THR
             double Tlag1 = parameters["Tlag1"];
             double Tlag2 = parameters["Tlag2"];
             double Tlead = parameters["Tlead"];
-            double Theta = parameters["Theta"];
             double Kp = parameters["Kp"];
             
             double y = 0; //response
@@ -308,9 +315,16 @@ namespace CTRL_THR
             double timeInterval = parameters["TimeInterval"];
             double pas = timeInterval / numberPoints;
 
+            for (int i = 0; i < BeginStep+1; i++)
+            {
+                double t = i; // Temps
+                double y = 0; // échelon
+                DataMV.Add(new ResponseData { Time = t, Response = y });
+            }
+            
             for (int i = 0; i < numberOfPoints; i++)
             {
-                double t = i*pas; // Temps
+                double t = i*pas + BeginStep; // Temps
                 double y = Kc; // échelon
                 DataMV.Add(new ResponseData { Time = t, Response = y });
             }
