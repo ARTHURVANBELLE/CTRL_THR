@@ -1,4 +1,8 @@
 is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
 build_property.TargetFramework = net8.0-ios
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -35,6 +39,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = CTRL_THR.Pages.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\MainPage.xaml
+
+[C:/Users/Van Belle Arthur/source/repos/CTRL_THR/CTRL_THR/CTRL_THR/Pages/SoOScillatory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CTRL_THR.Pages.SoOScillatory.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\SoOScillatory.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\SoOScillatory.xaml
 
 [C:/Users/Van Belle Arthur/source/repos/CTRL_THR/CTRL_THR/CTRL_THR/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

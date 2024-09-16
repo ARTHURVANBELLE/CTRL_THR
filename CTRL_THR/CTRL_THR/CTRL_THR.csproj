@@ -66,6 +66,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Pages\SoOScillatory.xaml.cs">
+	    <DependentUpon>SoOScillatory.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Pages\SoOScillatory.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\FoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

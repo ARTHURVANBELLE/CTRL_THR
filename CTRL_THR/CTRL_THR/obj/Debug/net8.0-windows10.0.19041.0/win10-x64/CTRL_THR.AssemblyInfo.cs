@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CTRL_THR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+cefff20d6bcfacc2ad5d5ae0ff5283f493474ee5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3dc5096b4f3904f2504c05347121a4d1a23a831d")]
 [assembly: System.Reflection.AssemblyProductAttribute("CTRL_THR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CTRL_THR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

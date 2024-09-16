@@ -17,7 +17,8 @@ namespace CTRL_THR
         private double BeginStep = 1;
 
         private Dictionary<string, double> parameters = new Dictionary<string, double> { { "Tlead", 0.0 },
-            {"Tlag1", 0.0 },{"Tlag2", 0.0 }, {"Kp", 0.0 }, {"Theta", 0.0 }, {"Points", 500 }, {"TimeInterval", 15 }};
+            {"Tlag1", 0.0 },{"Tlag2", 0.0 }, {"Kp", 0.0 }, {"Theta", 0.0 }, {"Points", 500 }, {"TimeInterval", 15 },
+            {"OmegaD", 0.0}, {"Sigma", 0.0 } };
 
 
         private ObservableCollection<ResponseData> _dataMV;
@@ -152,6 +153,26 @@ namespace CTRL_THR
                 OnPropertyChanged(nameof(TimeInterval));
             }
         }
+        private string _omegaD;
+        public string OmegaD
+        {
+            get => _omegaD;
+            set
+            {
+                _omegaD = value;
+                OnPropertyChanged(nameof(OmegaD));
+            }
+        }
+        private string _sigma;
+        public string Sigma
+        {
+            get => _sigma;
+            set
+            {
+                _sigma = value;
+                OnPropertyChanged(nameof(Sigma));
+            }
+        }
 
         private string _processName;
         public string ProcessName
@@ -165,6 +186,7 @@ namespace CTRL_THR
         }
 
         public ICommand NavigateToStepPageCommand { get; }
+        public ICommand NavigateToMainCommand { get; }
 
         private readonly INavigation _navigation;
 
@@ -172,6 +194,7 @@ namespace CTRL_THR
         {
             _navigation = navigation;
             NavigateToStepPageCommand = new Command(NavigateToStepPage);
+            NavigateToMainCommand = new Command(NavigateToMain);
 
             DataStep = new ObservableCollection<ResponseData>();
             DataMV = new ObservableCollection<ResponseData>();
@@ -183,12 +206,25 @@ namespace CTRL_THR
             GenerateMV(1, parameters["Points"]);
             AdjustYAxisLimits(1);
         }
+
+        private async void NavigateToMain()
+        {
+            MainPage mainPage = new MainPage();
+            // Naviguez vers cette page
+            await _navigation.PushAsync(mainPage);
+        }
         private async void NavigateToStepPage()
         {
             GetEntryValues();
-
-            // Créez une nouvelle instance de la page FoPage
-            var stepPage = new StepPage(parameters);
+            ContentPage stepPage = null;
+            if (parameters["Sigma"] != 0 && parameters["OmegaD"] != 0)
+            {
+                stepPage = new SoPage(parameters);
+            }
+            else
+            {
+                stepPage = new StepPage(parameters);
+            }
 
             // Naviguez vers cette page
             await _navigation.PushAsync(stepPage);
@@ -229,10 +265,16 @@ namespace CTRL_THR
             double Tlag2 = parameters["Tlag2"];
             double Tlead = parameters["Tlead"];
             double Kp = parameters["Kp"];
+            double OmegaD = parameters["OmegaD"];
+            double Sigma = parameters["Sigma"];
             
             double y = 0; //response
 
-            if (Tlag1 != 0 && Tlag2 != 0 && Tlead != 0 && Kp != 0)
+            if (OmegaD != 0 && Sigma != 0)
+            {
+                y = GenerateStepSOOSCILLATORY(t, Sigma, OmegaD);
+            }
+            else if (Tlag1 != 0 && Tlag2 != 0 && Tlead != 0 && Kp != 0)
             {
                 y = GenerateStepLLANDFO(t, Tlag1, Tlag2, Tlead, Kp);
             }
@@ -260,6 +302,8 @@ namespace CTRL_THR
             double theta = 0;
             double points = 500;
             double timeInterval = 0.5;
+            double sigma = 0.0;
+            double omegaD = 0.0;
 
             // Culture info with '.' as decimal separator
             var culture = System.Globalization.CultureInfo.InvariantCulture;
@@ -271,6 +315,8 @@ namespace CTRL_THR
             double.TryParse(_theta?.ToString(), System.Globalization.NumberStyles.Any, culture, out theta);
             double.TryParse(_points?.ToString(), System.Globalization.NumberStyles.Any, culture, out points);
             double.TryParse(_timeInterval?.ToString(), System.Globalization.NumberStyles.Any, culture, out timeInterval);
+            double.TryParse(_sigma?.ToString(), System.Globalization.NumberStyles.Any, culture, out sigma);
+            double.TryParse(_omegaD?.ToString(), System.Globalization.NumberStyles.Any, culture, out omegaD);
             // You can similarly parse points if needed
 
             parameters["Tlead"] = tlead;
@@ -280,6 +326,8 @@ namespace CTRL_THR
             parameters["Theta"] = theta;
             parameters["Points"] = points;
             parameters["TimeInterval"] = timeInterval;
+            parameters["Sigma"] = sigma;
+            parameters["OmegaD"] = omegaD;
         }
         private double GenerateStepFO(double time, double Tlag, double Kp)
         {
@@ -306,6 +354,13 @@ namespace CTRL_THR
         {
             double y = Kp * (1 + ((Tlag1 - Tlead) / (Tlag2 - Tlag1)) * Math.Exp(-time / Tlag1) - ((Tlag2 - Tlead) / (Tlag2 - Tlag1)) * Math.Exp(-time / Tlag2));
             _processName = "-- Lead-Lag & FO in Series --";
+            return y;
+        }
+
+        private double GenerateStepSOOSCILLATORY(double time, double sigma, double omegaD)
+        {
+            double y = 1 - Math.Exp(-sigma * time) * (Math.Cos(omegaD * time) + sigma / omegaD * Math.Sin(omegaD * time));
+            _processName = "-- Second Order Oscillatory --";
             return y;
         }
 
@@ -356,6 +411,8 @@ namespace CTRL_THR
             _theta = parameters["Theta"].ToString();
             _timeInterval = parameters["TimeInterval"].ToString();
             _points = parameters["Points"].ToString();
+            _sigma = parameters["Sigma"].ToString();
+            _omegaD = parameters["OmegaD"].ToString();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

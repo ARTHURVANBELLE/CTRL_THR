@@ -19,7 +19,12 @@
                 x:Name="FoBtn"
                 Clicked="OnFOClicked"
                 HorizontalOptions="Center"
-                Text="Process Analyse" />
+                Text="Simple Process Analyse" />
+            <Button
+                x:Name="SoBtn"
+                Clicked="OnSoClicked"
+                HorizontalOptions="Center"
+                Text="Bonus Process Analyse" />
         </VerticalStackLayout>
     </ScrollView>
 
